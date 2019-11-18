@@ -51,7 +51,7 @@ public class CartActivity extends AppCompatActivity {
             System.out.println("danh sách: " + id);
         }
         for (int i = 0; i < DetailActivity.giohangIds.size(); i ++) {
-            GioHang gh = GioHang.create(dataCart, id);
+            GioHang gh = GioHang.create(dataCart, i);
             giohangs.add(gh);
         }
         CartAdapter cartadapter = new CartAdapter(giohangs, getApplicationContext());
