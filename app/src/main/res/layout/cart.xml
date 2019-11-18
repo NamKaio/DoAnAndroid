@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="5">
+
+    <ImageView
+        android:id="@+id/iv_cart_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_rowSpan="4"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_cart_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_columnSpan="3"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Tên"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/bt_cart_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_row="0"
+        android:layout_column="4"
+        android:background="@drawable/close"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:text="Phân loại: "
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="#D1C40C"/>
+
+    <TextView
+        android:id="@+id/tv_cart_kind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:layout_columnSpan="3"
+        android:text="Phân loại"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="#D1C40C"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_cart_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_columnSpan="4"
+        android:text="Giá tiền"
+        android:textSize="30sp"
+        android:textColor="#FE6810"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/bt_cart_mines"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:text="-"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"/>
+
+    <EditText
+        android:id="@+id/et_cart_custom_quantity"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="2"
+        android:text="1"
+        android:textSize="20sp"
+        android:textColor="#181818"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/bt_cart_plus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_row="3"
+        android:layout_column="3"
+        android:text="+"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+</GridLayout>

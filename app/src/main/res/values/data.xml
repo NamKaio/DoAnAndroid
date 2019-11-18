@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="idsCart">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="ids">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </integer-array>
+
+    <string-array name="urls">
+        <item>http://douongcaocap.vn/wp-content/uploads/2018/11/Bia-Becks-5-Lon-500ml-Th%C3%B9ng-12-Lon.jpg</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/09/Bia-Chimay-v%C3%A0ng-48-chai-330ml-300x340-1.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2016/10/La-Trappe-Quadrupel-330ml-1.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2016/12/Falo-1.png</item>
+    </string-array>
+
+    <string-array name="names">
+        <item>Bia Beck\'s</item>
+        <item>Bia Chimay Vàng</item>
+        <item>Bia La Trappe Quadrupel</item>
+        <item>Rượu Vang Falo</item>
+    </string-array>
+
+    <string-array name="countries">
+        <item>Đức</item>
+        <item>Bỉ</item>
+        <item>Hà Lan</item>
+        <item>Ý</item>
+    </string-array>
+
+    <string-array name="manufacturers">
+        <item>Brauerei Beck and Co</item>
+        <item>Brasserie de Chimay</item>
+        <item>Weyerbacher Brewing</item>
+        <item>San Marzano</item>
+    </string-array>
+
+    <string-array name="concentrations">
+        <item>5</item>
+        <item>4.8</item>
+        <item>10</item>
+        <item>13.5</item>
+    </string-array>
+
+    <string-array name="fulldescs">
+        <item>Thuộc dòng bia lager hấp dẫn, nhẹ nhàng đem đến những trải nghiệm đầy thích thú cho
+            người uống. Vị bia thơm mát, nhẹ nhàng dễ uống và dễ cảm nhận. Tất cả sẽ làm người
+            thưởng thức cực kỳ thích thú. Vị bia thơm thơm, nhẹ nhàng và ấn tượng càng làm người
+            dùng thực sự yêu thích. Bia đầy lôi cuốn và hấp dẫn, càng làm người dùng bị chinh phục.</item>
+        <item>Chimay Vàng là loại bia đặc biệt với hương vị riêng, khác với các loại Chimay khác.
+            Nếu bạn đã từng uống Chimay xanh hay Chimay đỏ thì cần phải thử thêm Chimay Gold – một
+            loại bia đặc biệt của Chimay, thì mới có thể thưởng thức đầy đủ các hương vị của Chimay.</item>
+        <item>Với nồng độ cồn cao, nên bia hơi kén chọn người uống. Chỉ khi bạn biết “uống đúng cách”
+            thì mới có thể cảm nhận đầy đủ mùi vị thơm ngon và thú vị mà dòng bia này mang lại.</item>
+        <item>Rượu vang Ý Falo Negroamaro,  là một chai rượu ngon được sản xuất từ giống nho Negroamaro,
+            thuộc miền Nam nước Ý xa xôi của hãng rượu danh tiếng San Marzano.</item>
+    </string-array>
+
+    <string-array name="kind">
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Rượu</item>
+    </string-array>
+
+    <string-array name="rates">
+        <item>4</item>
+        <item>4.8</item>
+        <item>4.5</item>
+        <item>3.5</item>
+    </string-array>
+
+    <integer-array name="costs">
+        <item>295000</item>
+        <item>2000000</item>
+        <item>2380000</item>
+        <item>440000</item>
+    </integer-array>
+
+    <integer-array name="solds">
+        <item>123</item>
+        <item>233</item>
+        <item>101</item>
+        <item>82</item>
+    </integer-array>
+
+    <integer-array name="quantity">
+        <item>235</item>
+        <item>98</item>
+        <item>46</item>
+        <item>33</item>
+    </integer-array>
+</resources>
