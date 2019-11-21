@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridLayout;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
@@ -22,7 +24,7 @@ import butterknife.ButterKnife;
 public class DetailActivity extends AppCompatActivity {
 
     int id = 0;
-    public static ArrayList<Integer> giohangIds = new ArrayList<Integer>();
+    public static ArrayList giohangs = new ArrayList<>();
 
     @BindView(R.id.iv_detail_photo)
     ImageView iv_detail_photo;
@@ -91,6 +93,9 @@ public class DetailActivity extends AppCompatActivity {
         } else {
             tv_detail_favorite.setVisibility(View.INVISIBLE);
         }
+//        giohangs.add(tv_detail_name.getText().toString());
+//        giohangs.add(tv_detail_cost.getText().toString());
+//        giohangs.add(tv_detail_kind.getText().toString());
 
         ClickListener listener = new ClickListener();
         bt_detail_add_to_cart.setOnClickListener(listener);
@@ -104,11 +109,9 @@ public class DetailActivity extends AppCompatActivity {
                 case R.id.bt_detail_add_to_cart:
                     Intent intentAdd = new Intent(getApplicationContext(), CartActivity.class);
                     intentAdd.putExtra("id", id);
-                    System.out.println("id hàng được click: " + id);
                     Toast msg = Toast.makeText(getApplicationContext(), "Sản phẩm đã được thêm vào giỏ!", Toast.LENGTH_SHORT);
                     msg.show();
-                    giohangIds.add(id);
-                    System.out.println("Giỏ hàng add id: " + id);
+                    giohangs.add(id);
                     startActivity(intentAdd);
                     break;
                 case R.id.bt_detail_cancel:

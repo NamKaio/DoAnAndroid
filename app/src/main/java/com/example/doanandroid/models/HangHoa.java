@@ -1,8 +1,11 @@
 package com.example.doanandroid.models;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.example.doanandroid.data.Data;
 
-public class HangHoa {
+public class HangHoa implements Parcelable {
     private int id;
     private String photo;
     private String name;
@@ -32,6 +35,33 @@ public class HangHoa {
         this.rate = rate;
         this.quantity = quantity;
     }
+
+    protected HangHoa(Parcel in) {
+        id = in.readInt();
+        photo = in.readString();
+        name = in.readString();
+        country = in.readString();
+        manufacturer = in.readString();
+        concentration = in.readFloat();
+        fulldesc = in.readString();
+        kind = in.readString();
+        cost = in.readInt();
+        sold = in.readInt();
+        rate = in.readFloat();
+        quantity = in.readInt();
+    }
+
+    public static final Creator<HangHoa> CREATOR = new Creator<HangHoa>() {
+        @Override
+        public HangHoa createFromParcel(Parcel in) {
+            return new HangHoa(in);
+        }
+
+        @Override
+        public HangHoa[] newArray(int size) {
+            return new HangHoa[size];
+        }
+    };
 
     public int getId() {
         return id;
@@ -133,5 +163,26 @@ public class HangHoa {
         return new HangHoa(data.ids()[index],data.urls()[index], data.names()[index], data.countries()[index],
                 data.manufacturers()[index], data.concentrations()[index], data.fullDescs()[index], data.kind()[index],
                 data.costs()[index], data.solds()[index], data.rates()[index], data.quantities()[index]);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(id);
+        dest.writeString(photo);
+        dest.writeString(name);
+        dest.writeString(country);
+        dest.writeString(manufacturer);
+        dest.writeFloat(concentration);
+        dest.writeString(fulldesc);
+        dest.writeString(kind);
+        dest.writeInt(cost);
+        dest.writeInt(sold);
+        dest.writeFloat(rate);
+        dest.writeInt(quantity);
     }
 }

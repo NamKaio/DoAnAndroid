@@ -11,8 +11,6 @@ import android.widget.TextView;
 
 import com.example.doanandroid.adapter.CartAdapter;
 import com.example.doanandroid.data.Data;
-import com.example.doanandroid.data.DataCart;
-import com.example.doanandroid.models.GioHang;
 import com.example.doanandroid.models.HangHoa;
 
 import java.util.ArrayList;
@@ -43,19 +41,17 @@ public class CartActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         id = getIntent().getIntExtra("id", 0);
-        System.out.println("id được nhận: " + id);
+        ArrayList<HangHoa> hangHoas = new ArrayList<>();
+        Data data = Data.getInstance(this);
+        for (int i = 0; i < DetailActivity.giohangs.size(); i ++) {
+            HangHoa hh = HangHoa.create(data, i);
+            hangHoas.add(hh);
+        }
 
-        ArrayList<GioHang> giohangs = new ArrayList<>();
-        DataCart dataCart = DataCart.getInstance(this);
-        for (int i = 0; i < DetailActivity.giohangIds.size(); i ++) {
-            System.out.println("danh sách: " + id);
-        }
-        for (int i = 0; i < DetailActivity.giohangIds.size(); i ++) {
-            GioHang gh = GioHang.create(dataCart, i);
-            giohangs.add(gh);
-        }
-        CartAdapter cartadapter = new CartAdapter(giohangs, getApplicationContext());
+        CartAdapter cartadapter = new CartAdapter(hangHoas, getApplicationContext());
         gridview_cart.setAdapter(cartadapter);
+
+//        tv_cart_summary.setText();
 
         ClickListener listener = new ClickListener();
         bt_cart_home.setOnClickListener(listener);
