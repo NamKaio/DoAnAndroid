@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
+        ArrayList<HangHoa> hangHoas = getIntent().getParcelableArrayListExtra("id");
         HangHoaAdapter hanghoaadapter = new HangHoaAdapter(loadData(), getApplicationContext());
         gridview.setAdapter(hanghoaadapter);
         gridview.setOnItemClickListener(onitemclick);
@@ -91,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.bt_main_cart:
                     Intent intentCart = new Intent(getApplicationContext(), CartActivity.class);
+                    intentCart.putParcelableArrayListExtra("id", DetailActivity.giohangs);
                     startActivity(intentCart);
                     break;
             }

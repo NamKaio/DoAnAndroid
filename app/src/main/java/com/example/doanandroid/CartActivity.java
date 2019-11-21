@@ -55,6 +55,7 @@ public class CartActivity extends AppCompatActivity {
             switch (v.getId()){
                 case R.id.bt_cart_home:
                     Intent intentHome = new Intent(getApplicationContext(), MainActivity.class);
+                    intentHome.putParcelableArrayListExtra("id", DetailActivity.giohangs);
                     startActivity(intentHome);
                     break;
                 case R.id.bt_cart_buy:
