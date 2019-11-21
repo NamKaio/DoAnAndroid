@@ -44,8 +44,6 @@ public class CartActivity extends AppCompatActivity {
         CartAdapter cartadapter = new CartAdapter(hangHoas, getApplicationContext());
         gridview_cart.setAdapter(cartadapter);
 
-//        tv_cart_summary.setText();
-
         ClickListener listener = new ClickListener();
         bt_cart_home.setOnClickListener(listener);
         bt_cart_buy.setOnClickListener(listener);
