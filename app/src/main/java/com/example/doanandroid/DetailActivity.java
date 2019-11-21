@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.doanandroid.data.Data;
+import com.example.doanandroid.models.HangHoa;
 import com.example.doanandroid.utils.DownloadImage;
 
 import java.util.ArrayList;
@@ -24,7 +25,7 @@ import butterknife.ButterKnife;
 public class DetailActivity extends AppCompatActivity {
 
     int id = 0;
-    public static ArrayList giohangs = new ArrayList<>();
+    public static ArrayList<HangHoa> giohangs = new ArrayList<>();
 
     @BindView(R.id.iv_detail_photo)
     ImageView iv_detail_photo;
@@ -93,9 +94,6 @@ public class DetailActivity extends AppCompatActivity {
         } else {
             tv_detail_favorite.setVisibility(View.INVISIBLE);
         }
-//        giohangs.add(tv_detail_name.getText().toString());
-//        giohangs.add(tv_detail_cost.getText().toString());
-//        giohangs.add(tv_detail_kind.getText().toString());
 
         ClickListener listener = new ClickListener();
         bt_detail_add_to_cart.setOnClickListener(listener);
@@ -107,11 +105,13 @@ public class DetailActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()){
                 case R.id.bt_detail_add_to_cart:
+                    Data data = Data.getInstance(DetailActivity.this);
+                    HangHoa hh = HangHoa.create(data, id);
+                    giohangs.add(hh);
                     Intent intentAdd = new Intent(getApplicationContext(), CartActivity.class);
-                    intentAdd.putExtra("id", id);
+                    intentAdd.putParcelableArrayListExtra("id", giohangs);
                     Toast msg = Toast.makeText(getApplicationContext(), "Sản phẩm đã được thêm vào giỏ!", Toast.LENGTH_SHORT);
                     msg.show();
-                    giohangs.add(id);
                     startActivity(intentAdd);
                     break;
                 case R.id.bt_detail_cancel:

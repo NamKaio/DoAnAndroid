@@ -12,7 +12,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.doanandroid.R;
-import com.example.doanandroid.data.Data;
 import com.example.doanandroid.models.HangHoa;
 import com.example.doanandroid.utils.DownloadImage;
 
