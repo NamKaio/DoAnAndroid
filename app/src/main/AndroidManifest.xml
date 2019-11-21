@@ -12,9 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.doanandroid.CartActivity"></activity>
+        <activity android:name="com.example.doanandroid.CartActivity"/>
         <activity android:name="com.example.doanandroid.DetailActivity" />
-        <activity android:name="com.example.doanandroid.MainActivity">
+        <activity android:name="com.example.doanandroid.MainActivity" />
+        <activity
+            android:name="com.example.doanandroid.utils.StartScreen"
+            android:theme="@style/StartScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

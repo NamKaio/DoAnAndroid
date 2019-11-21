@@ -40,14 +40,7 @@ public class CartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cart);
         ButterKnife.bind(this);
 
-        id = getIntent().getIntExtra("id", 0);
-        ArrayList<HangHoa> hangHoas = new ArrayList<>();
-        Data data = Data.getInstance(this);
-        for (int i = 0; i < DetailActivity.giohangs.size(); i ++) {
-            HangHoa hh = HangHoa.create(data, i);
-            hangHoas.add(hh);
-        }
-
+        ArrayList<HangHoa> hangHoas = getIntent().getParcelableArrayListExtra("id");
         CartAdapter cartadapter = new CartAdapter(hangHoas, getApplicationContext());
         gridview_cart.setAdapter(cartadapter);
 
