@@ -8,7 +8,7 @@
     android:columnCount="5">
 
     <Button
-        android:id="@+id/bt_main_home"
+        android:id="@+id/btMainHome"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginLeft="10dp"
@@ -18,7 +18,7 @@
         android:background="@drawable/home"/>
 
     <Button
-        android:id="@+id/bt_main_beer"
+        android:id="@+id/btMainBeer"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginLeft="10dp"
@@ -28,7 +28,7 @@
         android:background="@drawable/beer"/>
 
     <Button
-        android:id="@+id/bt_main_wine"
+        android:id="@+id/btMainWine"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginLeft="10dp"
@@ -39,7 +39,7 @@
         android:layout_marginRight="10dp"/>
 
     <Button
-        android:id="@+id/bt_main_cart"
+        android:id="@+id/btMainCart"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginRight="10dp"
@@ -50,7 +50,7 @@
         android:background="@drawable/cart"/>
 
     <EditText
-        android:id="@+id/et_main_search"
+        android:id="@+id/etMainSearch"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -60,7 +60,7 @@
         android:hint="Nhập tìm kiếm" />
 
     <Button
-        android:id="@+id/bt_main_search"
+        android:id="@+id/btMainSearch"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginRight="10dp"
@@ -78,7 +78,7 @@
         android:background="#F3F3F2"/>
 
     <GridView
-        android:id="@+id/gridview"
+        android:id="@+id/gridView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_row="3"

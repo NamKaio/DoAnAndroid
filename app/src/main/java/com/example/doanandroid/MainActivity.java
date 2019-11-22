@@ -25,23 +25,23 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.gridview)
-    GridView gridview;
+    @BindView(R.id.gridView)
+    GridView gridView;
 
-    @BindView(R.id.bt_main_home)
-    Button btnHome;
+    @BindView(R.id.btMainHome)
+    Button btMainHome;
 
-    @BindView(R.id.bt_main_beer)
-    Button btnBeer;
+    @BindView(R.id.btMainBeer)
+    Button btMainBeer;
 
-    @BindView(R.id.bt_main_wine)
-    Button btnWine;
+    @BindView(R.id.btMainWine)
+    Button btMainWine;
 
-    @BindView(R.id.bt_main_search)
-    Button btSearch;
+    @BindView(R.id.btMainSearch)
+    Button btMainSearch;
 
-    @BindView(R.id.bt_main_cart)
-    Button btnCart;
+    @BindView(R.id.btMainCart)
+    Button btMainCart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,24 +49,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        ArrayList<HangHoa> hangHoas = getIntent().getParcelableArrayListExtra("id");
-        HangHoaAdapter hanghoaadapter = new HangHoaAdapter(loadData(), getApplicationContext());
-        gridview.setAdapter(hanghoaadapter);
-        gridview.setOnItemClickListener(onitemclick);
+        HangHoaAdapter hangHoaAdapter = new HangHoaAdapter(loadData(), getApplicationContext());
+        gridView.setAdapter(hangHoaAdapter);
+        gridView.setOnItemClickListener(onItemClick);
 
         ClickListener listener = new ClickListener();
-        btnHome.setOnClickListener(listener);
-        btnBeer.setOnClickListener(listener);
-        btnWine.setOnClickListener(listener);
-        btnCart.setOnClickListener(listener);
-        btSearch.setOnClickListener(listener);
+        btMainHome.setOnClickListener(listener);
+        btMainBeer.setOnClickListener(listener);
+        btMainWine.setOnClickListener(listener);
+        btMainCart.setOnClickListener(listener);
+        btMainSearch.setOnClickListener(listener);
     }
 
-    private AdapterView.OnItemClickListener onitemclick = new AdapterView.OnItemClickListener() {
+    private AdapterView.OnItemClickListener onItemClick = new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             Intent intent = new Intent(getApplicationContext(), DetailActivity.class);
-            intent.putExtra("id", (int) gridview.getAdapter().getItemId(position));
+            intent.putExtra("id", (int) gridView.getAdapter().getItemId(position));
             startActivity(intent);
         }
     };
@@ -75,24 +74,24 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             switch (v.getId()){
-                case R.id.bt_main_home:
+                case R.id.btMainHome:
                     Toast msgh = Toast.makeText(getApplicationContext(), "Trang chủ", Toast.LENGTH_SHORT);
                     msgh.show();
                     loadDataHome();
                     break;
-                case R.id.bt_main_beer:
+                case R.id.btMainBeer:
                     Toast msgb = Toast.makeText(getApplicationContext(), "Bia", Toast.LENGTH_SHORT);
                     msgb.show();
                     loadDataBeer();
                     break;
-                case R.id.bt_main_wine:
+                case R.id.btMainWine:
                     Toast msgw = Toast.makeText(getApplicationContext(), "Rượu", Toast.LENGTH_SHORT);
                     msgw.show();
                     loadDataWine();
                     break;
-                case R.id.bt_main_cart:
+                case R.id.btMainCart:
                     Intent intentCart = new Intent(getApplicationContext(), CartActivity.class);
-                    intentCart.putParcelableArrayListExtra("id", DetailActivity.giohangs);
+                    intentCart.putParcelableArrayListExtra("id", DetailActivity.gioHangs);
                     startActivity(intentCart);
                     break;
             }
@@ -100,55 +99,55 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadDataHome(){
-        HangHoaAdapter hanghoaadapter = new HangHoaAdapter(loadData(), getApplicationContext());
-        gridview.setAdapter(hanghoaadapter);
+        HangHoaAdapter hangHoaAdapter = new HangHoaAdapter(loadData(), getApplicationContext());
+        gridView.setAdapter(hangHoaAdapter);
     }
 
     private void loadDataBeer(){
-        HangHoaAdapter hanghoaadapter = new HangHoaAdapter(loadBeer(), getApplicationContext());
-        gridview.setAdapter(hanghoaadapter);
-        hanghoaadapter.notifyDataSetChanged();
+        HangHoaAdapter hangHoaAdapter = new HangHoaAdapter(loadBeer(), getApplicationContext());
+        gridView.setAdapter(hangHoaAdapter);
+        hangHoaAdapter.notifyDataSetChanged();
     }
 
     private void loadDataWine(){
-        HangHoaAdapter hanghoaadapter = new HangHoaAdapter(loadWine(), getApplicationContext());
-        gridview.setAdapter(hanghoaadapter);
-        hanghoaadapter.notifyDataSetChanged();
+        HangHoaAdapter hangHoaAdapter = new HangHoaAdapter(loadWine(), getApplicationContext());
+        gridView.setAdapter(hangHoaAdapter);
+        hangHoaAdapter.notifyDataSetChanged();
     }
 
     private ArrayList<HangHoa> loadData() {
-        ArrayList<HangHoa> hanghoas = new ArrayList<>();
+        ArrayList<HangHoa> hangHoas = new ArrayList<>();
         Data data = Data.getInstance(this);
         for (int i = 0; i < data.ids().length; i ++) {
             HangHoa hh = HangHoa.create(data, i);
-            hanghoas.add(hh);
+            hangHoas.add(hh);
         }
-        return hanghoas;
+        return hangHoas;
     }
 
     private ArrayList<HangHoa> loadBeer() {
-        ArrayList<HangHoa> hanghoas = new ArrayList<>();
+        ArrayList<HangHoa> hangHoas = new ArrayList<>();
         Data data = Data.getInstance(this);
         String [] kinds = data.kind();
         for (int i = 0; i < kinds.length; i ++) {
             if (kinds[i].equals("Bia")) {
                 HangHoa hh = HangHoa.create(data, i);
-                hanghoas.add(hh);
+                hangHoas.add(hh);
             }
         }
-        return hanghoas;
+        return hangHoas;
     }
 
     private ArrayList<HangHoa> loadWine() {
-        ArrayList<HangHoa> hanghoas = new ArrayList<>();
+        ArrayList<HangHoa> hangHoas = new ArrayList<>();
         Data data = Data.getInstance(this);
         String [] kinds = data.kind();
         for (int i = 0; i < data.kind().length; i ++) {
             if (kinds[i].equals("Rượu")) {
                 HangHoa hh = HangHoa.create(data, i);
-                hanghoas.add(hh);
+                hangHoas.add(hh);
             }
         }
-        return hanghoas;
+        return hangHoas;
     }
 }

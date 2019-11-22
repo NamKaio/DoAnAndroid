@@ -5,7 +5,7 @@
     android:columnCount="5">
 
     <ImageView
-        android:id="@+id/iv_cart_photo"
+        android:id="@+id/ivCartPhoto"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_row="0"
@@ -14,7 +14,7 @@
         android:layout_margin="10dp"/>
 
     <TextView
-        android:id="@+id/tv_cart_name"
+        android:id="@+id/tvCartName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="0"
@@ -28,7 +28,7 @@
         android:textColor="@color/colorPrimaryDark"/>
 
     <Button
-        android:id="@+id/bt_cart_delete"
+        android:id="@+id/btCartDelete"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_row="0"
@@ -46,7 +46,7 @@
         android:textColor="#D1C40C"/>
 
     <TextView
-        android:id="@+id/tv_cart_kind"
+        android:id="@+id/tvCartKind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="1"
@@ -58,7 +58,7 @@
         android:layout_marginRight="10dp"/>
 
     <TextView
-        android:id="@+id/tv_cart_quantity"
+        android:id="@+id/tvCartQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="1"
@@ -69,7 +69,7 @@
         android:visibility="invisible"/>
 
     <TextView
-        android:id="@+id/tv_cart_cost"
+        android:id="@+id/tvCartCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="2"
@@ -81,7 +81,7 @@
         android:layout_marginRight="10dp"/>
 
     <Button
-        android:id="@+id/bt_cart_mines"
+        android:id="@+id/btCartMines"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_row="3"
@@ -93,7 +93,7 @@
         android:layout_gravity="right"/>
 
     <EditText
-        android:id="@+id/et_cart_custom_quantity"
+        android:id="@+id/etCartCustomQuantity"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_row="3"
@@ -105,7 +105,7 @@
         android:layout_marginTop="10dp"/>
 
     <Button
-        android:id="@+id/bt_cart_plus"
+        android:id="@+id/btCartPlus"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_row="3"
