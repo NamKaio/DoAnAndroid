@@ -8,9 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.doanandroid.adapter.CartAdapter;
-import com.example.doanandroid.data.Data;
 import com.example.doanandroid.models.HangHoa;
 
 import java.util.ArrayList;
@@ -20,19 +20,17 @@ import butterknife.ButterKnife;
 
 public class CartActivity extends AppCompatActivity {
 
-    int id = 0;
+    @BindView(R.id.gridViewCart)
+    GridView gridViewCart;
 
-    @BindView(R.id.gridview_cart)
-    GridView gridview_cart;
+    @BindView(R.id.tvCartSummary)
+    TextView tvCartSummary;
 
-    @BindView(R.id.tv_cart_summary)
-    TextView tv_cart_summary;
+    @BindView(R.id.btCartHome)
+    Button btCartHome;
 
-    @BindView(R.id.bt_cart_home)
-    Button bt_cart_home;
-
-    @BindView(R.id.bt_cart_buy)
-    Button bt_cart_buy;
+    @BindView(R.id.btCartBuy)
+    Button btCartBuy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,24 +39,26 @@ public class CartActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         ArrayList<HangHoa> hangHoas = getIntent().getParcelableArrayListExtra("id");
-        CartAdapter cartadapter = new CartAdapter(hangHoas, getApplicationContext());
-        gridview_cart.setAdapter(cartadapter);
+        CartAdapter cartAdapter = new CartAdapter(hangHoas, getApplicationContext());
+        gridViewCart.setAdapter(cartAdapter);
 
         ClickListener listener = new ClickListener();
-        bt_cart_home.setOnClickListener(listener);
-        bt_cart_buy.setOnClickListener(listener);
+        btCartHome.setOnClickListener(listener);
+        btCartBuy.setOnClickListener(listener);
     }
 
     private class ClickListener implements View.OnClickListener{
         @Override
         public void onClick(View v) {
             switch (v.getId()){
-                case R.id.bt_cart_home:
+                case R.id.btCartHome:
                     Intent intentHome = new Intent(getApplicationContext(), MainActivity.class);
-                    intentHome.putParcelableArrayListExtra("id", DetailActivity.giohangs);
+                    intentHome.putParcelableArrayListExtra("id", DetailActivity.gioHangs);
                     startActivity(intentHome);
                     break;
-                case R.id.bt_cart_buy:
+                case R.id.btCartBuy:
+                    Toast msgb = Toast.makeText(getApplicationContext(), "Chức năng này em vẫn chưa làm :v !", Toast.LENGTH_SHORT);
+                    msgb.show();
                     break;
             }
         }

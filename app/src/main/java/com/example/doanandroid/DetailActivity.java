@@ -25,49 +25,49 @@ import butterknife.ButterKnife;
 public class DetailActivity extends AppCompatActivity {
 
     int id = 0;
-    public static ArrayList<HangHoa> giohangs = new ArrayList<>();
+    public static ArrayList<HangHoa> gioHangs = new ArrayList<>();
 
-    @BindView(R.id.iv_detail_photo)
-    ImageView iv_detail_photo;
+    @BindView(R.id.ivDetailPhoto)
+    ImageView ivDetailPhoto;
 
-    @BindView(R.id.tv_detail_name)
-    TextView tv_detail_name;
+    @BindView(R.id.tvDetailName)
+    TextView tvDetailName;
 
-    @BindView(R.id.tv_detail_cost)
-    TextView tv_detail_cost;
+    @BindView(R.id.tvDetailCost)
+    TextView tvDetailCost;
 
-    @BindView(R.id.tv_detail_sold)
-    TextView tv_detail_sold;
+    @BindView(R.id.tvDetailSold)
+    TextView tvDetailSold;
 
-    @BindView(R.id.tv_detail_country)
-    TextView tv_detail_country;
+    @BindView(R.id.tvDetailCountry)
+    TextView tvDetailCountry;
 
-    @BindView(R.id.tv_detail_manufacturer)
-    TextView tv_detail_manufacturer;
+    @BindView(R.id.tvDetailManufacturer)
+    TextView tvDetailManufacturer;
 
-    @BindView(R.id.tv_detail_kind)
-    TextView tv_detail_kind;
+    @BindView(R.id.tvDetailKind)
+    TextView tvDetailKind;
 
-    @BindView(R.id.tv_detail_concentration)
-    TextView tv_detail_concentration;
+    @BindView(R.id.tvDetailConcentration)
+    TextView tvDetailConcentration;
 
-    @BindView(R.id.tv_detail_quantity)
-    TextView tv_detail_quantity;
+    @BindView(R.id.tvDetailQuantity)
+    TextView tvDetailQuantity;
 
-    @BindView(R.id.tv_detail_fulldesc)
-    TextView tv_detail_fulldesc;
+    @BindView(R.id.tvDetailFullDesc)
+    TextView tvDetailFullDesc;
 
-    @BindView(R.id.tv_detail_favorite)
-    TextView tv_detail_favorite;
+    @BindView(R.id.tvDetailFavorite)
+    TextView tvDetailFavorite;
 
-    @BindView(R.id.rb_detail_rate)
-    RatingBar rb_detail_rate;
+    @BindView(R.id.rbDetailRate)
+    RatingBar rbDetailRate;
 
-    @BindView(R.id.bt_detail_add_to_cart)
-    Button bt_detail_add_to_cart;
+    @BindView(R.id.btDetailAddToCart)
+    Button btDetailAddToCart;
 
-    @BindView(R.id.bt_detail_cancel)
-    Button bt_detail_cancel;
+    @BindView(R.id.btDetailCancel)
+    Button btDetailCancel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,43 +78,42 @@ public class DetailActivity extends AppCompatActivity {
         id = getIntent().getIntExtra("id", 0);
 
         Data data = Data.getInstance(this);
-        new DownloadImage(iv_detail_photo).execute(data.urls()[id]);
-        tv_detail_name.setText(data.names()[id]);
-        tv_detail_cost.setText(data.costs()[id] + "đ");
-        tv_detail_sold.setText("Đã bán: " + data.solds()[id] + "");
-        tv_detail_country.setText(data.countries()[id]);
-        tv_detail_manufacturer.setText(data.manufacturers()[id]);
-        tv_detail_kind.setText(data.kind()[id]);
-        tv_detail_concentration.setText(data.concentrations()[id] + "%");
-        tv_detail_quantity.setText(data.quantities()[id] + "");
-        tv_detail_fulldesc.setText(data.fullDescs()[id]);
-        rb_detail_rate.setRating(data.rates()[id]);
+        new DownloadImage(ivDetailPhoto).execute(data.urls()[id]);
+        tvDetailName.setText(data.names()[id]);
+        tvDetailCost.setText(data.costs()[id] + "đ");
+        tvDetailSold.setText("Đã bán: " + data.solds()[id] + "");
+        tvDetailCountry.setText(data.countries()[id]);
+        tvDetailManufacturer.setText(data.manufacturers()[id]);
+        tvDetailKind.setText(data.kind()[id]);
+        tvDetailConcentration.setText(data.concentrations()[id] + "%");
+        tvDetailQuantity.setText(data.quantities()[id] + "");
+        tvDetailFullDesc.setText(data.fullDescs()[id]);
+        rbDetailRate.setRating(data.rates()[id]);
         if (data.rates()[id] >= 4.5f) {
-            tv_detail_favorite.setVisibility(View.VISIBLE);
+            tvDetailFavorite.setVisibility(View.VISIBLE);
         } else {
-            tv_detail_favorite.setVisibility(View.INVISIBLE);
+            tvDetailFavorite.setVisibility(View.INVISIBLE);
         }
 
         ClickListener listener = new ClickListener();
-        bt_detail_add_to_cart.setOnClickListener(listener);
-        bt_detail_cancel.setOnClickListener(listener);
+        btDetailAddToCart.setOnClickListener(listener);
+        btDetailCancel.setOnClickListener(listener);
     }
 
     private class ClickListener implements View.OnClickListener{
         @Override
         public void onClick(View v) {
             switch (v.getId()){
-                case R.id.bt_detail_add_to_cart:
+                case R.id.btDetailAddToCart:
                     Data data = Data.getInstance(DetailActivity.this);
                     HangHoa hh = HangHoa.create(data, id);
-                    giohangs.add(hh);
+                    gioHangs.add(hh);
                     Intent intentAdd = new Intent(getApplicationContext(), CartActivity.class);
-                    intentAdd.putParcelableArrayListExtra("id", giohangs);
+                    intentAdd.putParcelableArrayListExtra("id", gioHangs);
                     Toast msg = Toast.makeText(getApplicationContext(), "Sản phẩm đã được thêm vào giỏ!", Toast.LENGTH_SHORT);
                     msg.show();
-                    startActivity(intentAdd);
                     break;
-                case R.id.bt_detail_cancel:
+                case R.id.btDetailCancel:
                     Intent intentCancel = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intentCancel);
                     break;

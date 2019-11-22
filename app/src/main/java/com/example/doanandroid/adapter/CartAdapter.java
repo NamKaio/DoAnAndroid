@@ -19,101 +19,101 @@ import java.util.ArrayList;
 
 public class CartAdapter extends BaseAdapter {
 
-    private ArrayList<HangHoa> giohang_list;
+    private ArrayList<HangHoa> gioHangList;
     Context context;
 
     public CartAdapter(ArrayList<HangHoa> giohang_list, Context context) {
-        this.giohang_list = giohang_list;
+        this.gioHangList = giohang_list;
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return giohang_list.size();
+        return gioHangList.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return giohang_list.get(position);
+        return gioHangList.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        return giohang_list.get(position).getId();
+        return gioHangList.get(position).getId();
     }
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-        final MyCartView dataitem;
+        final MyCartView dataItem;
         LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null) {
-            dataitem = new MyCartView();
+            dataItem = new MyCartView();
             convertView = inflater.inflate(R.layout.cart, null);
-            dataitem.iv_cart_photo = convertView.findViewById(R.id.iv_cart_photo);
-            dataitem.tv_cart_name = convertView.findViewById(R.id.tv_cart_name);
-            dataitem.tv_cart_kind = convertView.findViewById(R.id.tv_cart_kind);
-            dataitem.tv_cart_cost = convertView.findViewById(R.id.tv_cart_cost);
-            dataitem.tv_cart_quantity = convertView.findViewById(R.id.tv_cart_quantity);
-            dataitem.et_cart_custom_quantity = convertView.findViewById(R.id.et_cart_custom_quantity);
-            dataitem.bt_cart_mines = convertView.findViewById(R.id.bt_cart_mines);
-            dataitem.bt_cart_plus = convertView.findViewById(R.id.bt_cart_plus);
-            dataitem.bt_cart_delete = convertView.findViewById(R.id.bt_cart_delete);
-            convertView.setTag(dataitem);
+            dataItem.ivCartPhoto = convertView.findViewById(R.id.ivCartPhoto);
+            dataItem.tvCartName = convertView.findViewById(R.id.tvCartName);
+            dataItem.tvCartKind = convertView.findViewById(R.id.tvCartKind);
+            dataItem.tvCartCost = convertView.findViewById(R.id.tvCartCost);
+            dataItem.tvCartQuantity = convertView.findViewById(R.id.tvCartQuantity);
+            dataItem.etCartCustomQuantity = convertView.findViewById(R.id.etCartCustomQuantity);
+            dataItem.btCartMines = convertView.findViewById(R.id.btCartMines);
+            dataItem.btCartPlus = convertView.findViewById(R.id.btCartPlus);
+            dataItem.btCartDelete = convertView.findViewById(R.id.btCartDelete);
+            convertView.setTag(dataItem);
         } else {
-            dataitem = (MyCartView) convertView.getTag();
+            dataItem = (MyCartView) convertView.getTag();
         }
 
-        new DownloadImage(dataitem.iv_cart_photo).execute(giohang_list.get(position).getPhoto());
-        dataitem.tv_cart_name.setText(giohang_list.get(position).getName());
-        dataitem.tv_cart_kind.setText(giohang_list.get(position).getKind());
-        dataitem.tv_cart_cost.setText(giohang_list.get(position).getCost() + "đ");
-        dataitem.tv_cart_quantity.setText(giohang_list.get(position).getQuantity() + "");
-        dataitem.et_cart_custom_quantity.setText(1 + "");
+        new DownloadImage(dataItem.ivCartPhoto).execute(gioHangList.get(position).getPhoto());
+        dataItem.tvCartName.setText(gioHangList.get(position).getName());
+        dataItem.tvCartKind.setText(gioHangList.get(position).getKind());
+        dataItem.tvCartCost.setText(gioHangList.get(position).getCost() + "đ");
+        dataItem.tvCartQuantity.setText(gioHangList.get(position).getQuantity() + "");
+        dataItem.etCartCustomQuantity.setText(1 + "");
 
         View.OnClickListener onClick = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int customquantity = Integer.parseInt(dataitem.et_cart_custom_quantity.getText().toString());
-                int quantity = Integer.parseInt(dataitem.tv_cart_quantity.getText().toString());
+                int customquantity = Integer.parseInt(dataItem.etCartCustomQuantity.getText().toString());
+                int quantity = Integer.parseInt(dataItem.tvCartQuantity.getText().toString());
                 switch (v.getId()){
-                    case R.id.bt_cart_mines:
+                    case R.id.btCartMines:
                         if (customquantity > 1) {
-                            dataitem.et_cart_custom_quantity.setText(customquantity - 1 + "");
+                            dataItem.etCartCustomQuantity.setText(customquantity - 1 + "");
                         } else {
                             Toast msg = Toast.makeText(context, "Mặt hàng đã đạt giá trị tối thiểu!", Toast.LENGTH_SHORT);
                             msg.show();
                         }
                         break;
-                    case R.id.bt_cart_plus:
+                    case R.id.btCartPlus:
                         if (customquantity <= quantity) {
-                            dataitem.et_cart_custom_quantity.setText(customquantity + 1 + "");
+                            dataItem.etCartCustomQuantity.setText(customquantity + 1 + "");
                         } else {
                             Toast msg = Toast.makeText(context, "Mặt hàng đã đạt giá trị tối đa!", Toast.LENGTH_SHORT);
                             msg.show();
                         }
                         break;
-                    case R.id.bt_cart_delete:
+                    case R.id.btCartDelete:
 
                         break;
                 }
             }
         };
 
-        dataitem.bt_cart_mines.setOnClickListener(onClick);
-        dataitem.bt_cart_plus.setOnClickListener(onClick);
-        dataitem.bt_cart_delete.setOnClickListener(onClick);
+        dataItem.btCartMines.setOnClickListener(onClick);
+        dataItem.btCartPlus.setOnClickListener(onClick);
+        dataItem.btCartDelete.setOnClickListener(onClick);
         return convertView;
     }
 
     private static class MyCartView {
-        ImageView iv_cart_photo;
-        TextView tv_cart_name;
-        TextView tv_cart_kind;
-        TextView tv_cart_cost;
-        TextView tv_cart_quantity;
-        EditText et_cart_custom_quantity;
-        Button bt_cart_mines;
-        Button bt_cart_plus;
-        Button bt_cart_delete;
+        ImageView ivCartPhoto;
+        TextView tvCartName;
+        TextView tvCartKind;
+        TextView tvCartCost;
+        TextView tvCartQuantity;
+        EditText etCartCustomQuantity;
+        Button btCartMines;
+        Button btCartPlus;
+        Button btCartDelete;
     }
 }

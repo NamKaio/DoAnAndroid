@@ -15,27 +15,27 @@ import com.example.doanandroid.utils.DownloadImage;
 import java.util.ArrayList;
 
 public class HangHoaAdapter extends BaseAdapter {
-    private ArrayList<HangHoa> hanghoaList;
+    private ArrayList<HangHoa> hangHoaList;
     Context context;
 
     public HangHoaAdapter(ArrayList<HangHoa> hanghoaList, Context context) {
-        this.hanghoaList = hanghoaList;
+        this.hangHoaList = hanghoaList;
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return hanghoaList.size();
+        return hangHoaList.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return hanghoaList.get(position);
+        return hangHoaList.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        return hanghoaList.get(position).getId();
+        return hangHoaList.get(position).getId();
     }
 
     @Override
@@ -45,35 +45,40 @@ public class HangHoaAdapter extends BaseAdapter {
         if (convertView == null) {
             dataitem = new MyPostView();
             convertView = inflater.inflate(R.layout.post, null);
-            dataitem.iv_post_photo = convertView.findViewById(R.id.iv_post_photo);
-            dataitem.tv_post_name = convertView.findViewById(R.id.tv_post_name);
-            dataitem.tv_post_country = convertView.findViewById(R.id.tv_post_country);
-            dataitem.tv_post_manufacturer = convertView.findViewById(R.id.tv_post_manufacturer);
-            dataitem.tv_post_cost = convertView.findViewById(R.id.tv_post_cost);
-            dataitem.tv_post_sold = convertView.findViewById(R.id.tv_post_sold);
-            dataitem.tv_post_favorite = convertView.findViewById(R.id.tv_post_favorite);
+            dataitem.ivPostPhoto = convertView.findViewById(R.id.ivPostPhoto);
+            dataitem.tvPostName = convertView.findViewById(R.id.tvPostName);
+            dataitem.tvPostCountry = convertView.findViewById(R.id.tvPostCountry);
+            dataitem.tvPostManufacturer = convertView.findViewById(R.id.tvPostManufacturer);
+            dataitem.tvPostCost = convertView.findViewById(R.id.tvPostCost);
+            dataitem.tvPostSold = convertView.findViewById(R.id.tvPostSold);
+            dataitem.tvPostFavorite = convertView.findViewById(R.id.tvPostFavorite);
             convertView.setTag(dataitem);
         } else {
             dataitem = (MyPostView) convertView.getTag();
         }
 
-        new DownloadImage(dataitem.iv_post_photo).execute(hanghoaList.get(position).getPhoto());
-        dataitem.tv_post_name.setText(hanghoaList.get(position).getName());
-        dataitem.tv_post_country.setText(hanghoaList.get(position).getCountry());
-        dataitem.tv_post_manufacturer.setText(hanghoaList.get(position).getManufacturer());
-        dataitem.tv_post_cost.setText(hanghoaList.get(position).getCost() + "đ");
-        dataitem.tv_post_sold.setText(hanghoaList.get(position).getSold() + "");
-        if (hanghoaList.get(position).getRate() >= 4.5f) {
-            dataitem.tv_post_favorite.setVisibility(View.VISIBLE);
+        new DownloadImage(dataitem.ivPostPhoto).execute(hangHoaList.get(position).getPhoto());
+        dataitem.tvPostName.setText(hangHoaList.get(position).getName());
+        dataitem.tvPostCountry.setText(hangHoaList.get(position).getCountry());
+        dataitem.tvPostManufacturer.setText(hangHoaList.get(position).getManufacturer());
+        dataitem.tvPostCost.setText(hangHoaList.get(position).getCost() + "đ");
+        dataitem.tvPostSold.setText(hangHoaList.get(position).getSold() + "");
+        if (hangHoaList.get(position).getRate() >= 4.5f) {
+            dataitem.tvPostFavorite.setVisibility(View.VISIBLE);
         } else {
-            dataitem.tv_post_favorite.setVisibility(View.INVISIBLE);
+            dataitem.tvPostFavorite.setVisibility(View.INVISIBLE);
         }
 
         return convertView;
     }
 
     private static class MyPostView {
-        ImageView iv_post_photo;
-        TextView tv_post_name, tv_post_country, tv_post_manufacturer, tv_post_cost, tv_post_sold, tv_post_favorite;
+        ImageView ivPostPhoto;
+        TextView tvPostName;
+        TextView tvPostCountry;
+        TextView tvPostManufacturer;
+        TextView tvPostCost;
+        TextView tvPostSold;
+        TextView tvPostFavorite;
     }
 }
