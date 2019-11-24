@@ -49,30 +49,10 @@
         android:layout_column="4"
         android:background="@drawable/cart"/>
 
-    <EditText
-        android:id="@+id/etMainSearch"
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_row="1"
-        android:layout_column="0"
-        android:layout_columnSpan="4"
-        android:hint="Nhập tìm kiếm" />
-
-    <Button
-        android:id="@+id/btMainSearch"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginRight="10dp"
-        android:layout_gravity="right"
-        android:layout_row="1"
-        android:layout_column="4"
-        android:background="@drawable/search"/>
-
     <View
         android:layout_width="match_parent"
         android:layout_height="20px"
-        android:layout_row="2"
+        android:layout_row="1"
         android:layout_column="0"
         android:layout_columnSpan="5"
         android:background="#F3F3F2"/>
@@ -81,9 +61,9 @@
         android:id="@+id/gridView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_row="3"
+        android:layout_row="2"
         android:layout_column="0"
-        android:layout_marginBottom="117dp"
+        android:layout_marginBottom="70dp"
         android:layout_columnSpan="5"/>
 
 </GridLayout>

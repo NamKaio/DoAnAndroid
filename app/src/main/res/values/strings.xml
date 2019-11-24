@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DoAnAndroid_LHN</string>
+    <string name="search">Search</string>
+    <string name="actionsearch">actionSearch</string>
 </resources>

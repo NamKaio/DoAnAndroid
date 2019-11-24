@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -12,6 +15,7 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.example.doanandroid.adapter.HangHoaAdapter;
@@ -25,6 +29,8 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
+    HangHoaAdapter hangHoaAdapter;
+
     @BindView(R.id.gridView)
     GridView gridView;
 
@@ -37,9 +43,6 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.btMainWine)
     Button btMainWine;
 
-    @BindView(R.id.btMainSearch)
-    Button btMainSearch;
-
     @BindView(R.id.btMainCart)
     Button btMainCart;
 
@@ -49,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        HangHoaAdapter hangHoaAdapter = new HangHoaAdapter(loadData(), getApplicationContext());
+        hangHoaAdapter = new HangHoaAdapter(loadData(), getApplicationContext());
         gridView.setAdapter(hangHoaAdapter);
         gridView.setOnItemClickListener(onItemClick);
 
@@ -58,7 +61,29 @@ public class MainActivity extends AppCompatActivity {
         btMainBeer.setOnClickListener(listener);
         btMainWine.setOnClickListener(listener);
         btMainCart.setOnClickListener(listener);
-        btMainSearch.setOnClickListener(listener);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.main_menu, menu);
+
+        MenuItem item = menu.findItem(R.id.actionSearch);
+        SearchView searchView = (SearchView)item.getActionView();
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                hangHoaAdapter.getFilter().filter(newText);
+                return false;
+            }
+        });
+        return true;
     }
 
     private AdapterView.OnItemClickListener onItemClick = new AdapterView.OnItemClickListener() {
@@ -99,18 +124,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadDataHome(){
-        HangHoaAdapter hangHoaAdapter = new HangHoaAdapter(loadData(), getApplicationContext());
+        hangHoaAdapter = new HangHoaAdapter(loadData(), getApplicationContext());
         gridView.setAdapter(hangHoaAdapter);
     }
 
     private void loadDataBeer(){
-        HangHoaAdapter hangHoaAdapter = new HangHoaAdapter(loadBeer(), getApplicationContext());
+        hangHoaAdapter = new HangHoaAdapter(loadBeer(), getApplicationContext());
         gridView.setAdapter(hangHoaAdapter);
         hangHoaAdapter.notifyDataSetChanged();
     }
 
     private void loadDataWine(){
-        HangHoaAdapter hangHoaAdapter = new HangHoaAdapter(loadWine(), getApplicationContext());
+        hangHoaAdapter = new HangHoaAdapter(loadWine(), getApplicationContext());
         gridView.setAdapter(hangHoaAdapter);
         hangHoaAdapter.notifyDataSetChanged();
     }

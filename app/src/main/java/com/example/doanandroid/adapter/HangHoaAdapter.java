@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,13 +16,20 @@ import com.example.doanandroid.utils.DownloadImage;
 
 import java.util.ArrayList;
 
-public class HangHoaAdapter extends BaseAdapter {
+public class HangHoaAdapter extends BaseAdapter implements Filterable {
     private ArrayList<HangHoa> hangHoaList;
+    private ArrayList<HangHoa> hangHoaSearch;
     Context context;
 
     public HangHoaAdapter(ArrayList<HangHoa> hanghoaList, Context context) {
         this.hangHoaList = hanghoaList;
+        hangHoaSearch = new ArrayList<>(hanghoaList);
         this.context = context;
+    }
+
+    @Override
+    public Filter getFilter() {
+        return hangHoaFilter;
     }
 
     @Override
@@ -81,4 +90,32 @@ public class HangHoaAdapter extends BaseAdapter {
         TextView tvPostSold;
         TextView tvPostFavorite;
     }
+
+    private Filter hangHoaFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            ArrayList<HangHoa> filteredList = new ArrayList<>();
+            if (constraint == null || constraint.length() == 0) {
+                filteredList.addAll(hangHoaSearch);
+            } else {
+                String filterPattern = constraint.toString().toLowerCase().trim();
+                for (HangHoa item : hangHoaSearch) {
+                    if (item.getName().toLowerCase().contains(filterPattern)) {
+                        filteredList.add(item);
+                    }
+                }
+            }
+            FilterResults results = new FilterResults();
+            results.values = filteredList;
+
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            hangHoaList.clear();
+            hangHoaList.addAll((ArrayList)results.values);
+            notifyDataSetChanged();
+        }
+    };
 }
