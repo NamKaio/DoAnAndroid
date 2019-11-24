@@ -37,11 +37,16 @@ public class CartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
         ButterKnife.bind(this);
+        getSupportActionBar().setTitle("Giỏ hàng");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ArrayList<HangHoa> hangHoas = getIntent().getParcelableArrayListExtra("id");
         CartAdapter cartAdapter = new CartAdapter(hangHoas, getApplicationContext());
         gridViewCart.setAdapter(cartAdapter);
 
+        for (int i = 0; i < hangHoas.size(); i ++) {
+            tvCartSummary.setText(hangHoas.get(i).getCost() + "");
+        }
         ClickListener listener = new ClickListener();
         btCartHome.setOnClickListener(listener);
         btCartBuy.setOnClickListener(listener);
