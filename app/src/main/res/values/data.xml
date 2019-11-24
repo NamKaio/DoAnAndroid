@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer-array name="idsCart">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </integer-array>
-
     <integer-array name="ids">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
     </integer-array>
 
     <string-array name="urls">
         <item>http://douongcaocap.vn/wp-content/uploads/2018/11/Bia-Becks-5-Lon-500ml-Th%C3%B9ng-12-Lon.jpg</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/11/Bia-Engel-Bock-Dunkel-7.2-2.jpg</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/11/Bia-Engel-gold-5.4-chai-330ml-2.jpg</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2016/10/Oettinger-n%E1%BA%B7ng.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/02/Untitled-3.jpg</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2016/10/Oettinger-den.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2016/10/Oettinger-chay.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/03/bia-Flensburger-WinterBock.jpg</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/03/bia-Flensburger-Weizen.jpg</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2016/10/bia-chimay-xanh-300x340-1.jpg</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2016/10/chimay-white-1.jpg</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2016/10/Chimay.png</item>
         <item>http://douongcaocap.vn/wp-content/uploads/2017/09/Bia-Chimay-v%C3%A0ng-48-chai-330ml-300x340-1.png</item>
         <item>http://douongcaocap.vn/wp-content/uploads/2016/10/La-Trappe-Quadrupel-330ml-1.png</item>
         <item>http://douongcaocap.vn/wp-content/uploads/2016/12/Falo-1.png</item>
@@ -23,13 +38,35 @@
 
     <string-array name="names">
         <item>Bia Beck\'s</item>
-        <item>Bia Chimay Vàng</item>
-        <item>Bia La Trappe Quadrupel</item>
+        <item>Bia Engel Bock Dunkel</item>
+        <item>Bia Engel Gold</item>
+        <item>Bia Oettinger Blue</item>
+        <item>Bia Oettinger Gold</item>
+        <item>Bia Oettinger Black</item>
+        <item>Bia Oettinger Chay</item>
+        <item>Bia Flensburger Gold</item>
+        <item>Bia Flensburger Weizen</item>
+        <item>Bia Chimay Blue</item>
+        <item>Bia Chimay White</item>
+        <item>Bia Chimay Red</item>
+        <item>Bia Chimay Yellow</item>
+        <item>Bia La Trappe Quadrupel </item>
         <item>Rượu Vang Falo</item>
     </string-array>
 
     <string-array name="countries">
         <item>Đức</item>
+        <item>Đức</item>
+        <item>Đức</item>
+        <item>Đức</item>
+        <item>Đức</item>
+        <item>Đức</item>
+        <item>Đức</item>
+        <item>Đức</item>
+        <item>Đức</item>
+        <item>Bỉ</item>
+        <item>Bỉ</item>
+        <item>Bỉ</item>
         <item>Bỉ</item>
         <item>Hà Lan</item>
         <item>Ý</item>
@@ -37,6 +74,17 @@
 
     <string-array name="manufacturers">
         <item>Brauerei Beck and Co</item>
+        <item>Biermanufaktur GmbH</item>
+        <item>Biermanufaktur GmbH</item>
+        <item>Oettinger Brauerei GmbH</item>
+        <item>Oettinger Brauerei GmbH</item>
+        <item>Oettinger Brauerei GmbH</item>
+        <item>Oettinger Brauerei GmbH</item>
+        <item>Flensburger Brauerei</item>
+        <item>Flensburger Brauerei</item>
+        <item>Brasserie de Chimay</item>
+        <item>Brasserie de Chimay</item>
+        <item>Brasserie de Chimay</item>
         <item>Brasserie de Chimay</item>
         <item>Weyerbacher Brewing</item>
         <item>San Marzano</item>
@@ -44,6 +92,17 @@
 
     <string-array name="concentrations">
         <item>5</item>
+        <item>7.2</item>
+        <item>5.4</item>
+        <item>8.9</item>
+        <item>5.4</item>
+        <item>4.9</item>
+        <item>0.5</item>
+        <item>7</item>
+        <item>5.1</item>
+        <item>9</item>
+        <item>8</item>
+        <item>7</item>
         <item>4.8</item>
         <item>10</item>
         <item>13.5</item>
@@ -54,6 +113,38 @@
             người uống. Vị bia thơm mát, nhẹ nhàng dễ uống và dễ cảm nhận. Tất cả sẽ làm người
             thưởng thức cực kỳ thích thú. Vị bia thơm thơm, nhẹ nhàng và ấn tượng càng làm người
             dùng thực sự yêu thích. Bia đầy lôi cuốn và hấp dẫn, càng làm người dùng bị chinh phục.</item>
+        <item>Là sự kết hợp của hương trái cây dịu nhẹ kết hợp cùng vị malt đăng đắng cay nồng.
+            Engel Bock Dunkel là sự lựa chọn hoàn hảo của những yêu thích gout bia đậm đà. Nồng độ
+            cồn 7.2% đủ để kích thích vị giác của người uống. Không quên kể đến vị caramel và cafe
+            phảng phất đâu đó khi thưởng thức.</item>
+        <item>Bia với sắc vàng quyến rũ và óng ánh. Đồng thời thơm và đậm vị của những nguyên liệu
+            hấp dẫn. Chính điều này, đã khiến Engel Gold trở thành một dòng bia đạt giải Bạc ngôi sao
+            bia của Châu Âu.</item>
+        <item>Oettinger đặc biệt là loại Oettinger nặng – là một trong số những dòng sản phẩm đến từ
+            Đức. Mang chút hương vị đặc trưng từ nước Đức xa xôi, Oettinger hứa hẹn mang đến cho
+            những người sành bia Việt Nam một cách thưởng thức bia ngon đúng điệu mới.</item>
+        <item>Là loại bia được lên men đáy với màu nước cốt vàng đậm, được tinh chế từ nguồn nguyên
+            liệu chất lượng chỉ bao bao 4 nguyên liệu tạo cho bia hương vị tinh khiết và với hàm
+            lượng mạch nha trong thành phần nguyên liệu cao hơn các loại bia thông thường giúp cho
+            nước cốt bia được bảo quản một cách tự nhiên.</item>
+        <item>Bia Oettinger Đen 4.9% – 500ml là loại bia lager. Với bao bì vỏ lon màu đen với toàn
+            bộ và một hương vị cay đắng ngọt. Đây dự đoán sẽ là một loại bia hoàn hảo cho những người sành bia.</item>
+        <item>Oettinger Chay – còn được biết đến là loại bia không cồn hoặc chỉ chứa một lượng cồn nhỏ.
+            Theo luật, các loại bia có nồng độ cồn không quá 0,5% có thể được gọi là bia không cồn.
+            Các loại bia này thích hợp với phụ nữ, người già và những người cần sự tỉnh táo, chẳng
+            hạn những người điều khiển các phương tiện giao thông.</item>
+        <item>Bia Flensburger Gold nhập khẩu từ Đức trông như một Dunkel truyền thống song với
+            độ nồng lớn của cồn xông lên tạo ra một hương vị bia lager mạnh mẽ và sảng khoái vô cùng.</item>
+        <item>Bia Flensburger Weizen là chủng loại bia thuộc một trong những thương hiệu lager bia
+            điển hình của Đức không chỉ thơm ngon ở hương vị và nước cốt mà còn ở thiết kế độc đáo
+            hấp dẫn người thưởng thức ngay từ ánh nhìn đầu tiên.</item>
+        <item>Bia nhập khẩu Chimay Xanh thuộc top 5 loại bia bán chạy nhất hiện nay. Chimay tự hào
+            là một trong số ít những sản phẩm bia nhập khẩu được ưa chuộng nhất hiện nay.</item>
+        <item>Bia Chimay trắng ra đời dưới bàn tay của cha sử Theodore tại vùng  đất nước Bỉ xa xôi.
+            Trải qua quá trình nung nấu và lên men kỳ công để tạo ra được mùi vị bia tuyệt hảo.</item>
+        <item>Có thể nói, bia Chimay đỏ là một trong những loại sản phẩm được ra đời đầu tiên dưới
+            bàn tay của các thầy tu tại Bỉ. Với đặc trưng là màu đồng sóng sánh, những chai bia Chimay
+            đã làm say mê những người sành bia ở khắp tất cả mọi nơi.</item>
         <item>Chimay Vàng là loại bia đặc biệt với hương vị riêng, khác với các loại Chimay khác.
             Nếu bạn đã từng uống Chimay xanh hay Chimay đỏ thì cần phải thử thêm Chimay Gold – một
             loại bia đặc biệt của Chimay, thì mới có thể thưởng thức đầy đủ các hương vị của Chimay.</item>
@@ -67,18 +158,51 @@
         <item>Bia</item>
         <item>Bia</item>
         <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
         <item>Rượu</item>
     </string-array>
 
     <string-array name="rates">
         <item>4</item>
-        <item>4.8</item>
+        <item>4.5</item>
+        <item>4</item>
+        <item>5</item>
+        <item>4.5</item>
+        <item>3.5</item>
+        <item>3</item>
+        <item>4.5</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
         <item>4.5</item>
         <item>3.5</item>
     </string-array>
 
     <integer-array name="costs">
         <item>295000</item>
+        <item>1275000</item>
+        <item>1125000</item>
+        <item>1020000</item>
+        <item>920000</item>
+        <item>980000</item>
+        <item>840000</item>
+        <item>1680000</item>
+        <item>1680000</item>
+        <item>2000000</item>
+        <item>2000000</item>
+        <item>2000000</item>
         <item>2000000</item>
         <item>2380000</item>
         <item>440000</item>
@@ -86,15 +210,37 @@
 
     <integer-array name="solds">
         <item>123</item>
+        <item>103</item>
+        <item>66</item>
+        <item>189</item>
+        <item>145</item>
+        <item>76</item>
+        <item>34</item>
+        <item>153</item>
+        <item>148</item>
         <item>233</item>
+        <item>225</item>
+        <item>210</item>
+        <item>207</item>
         <item>101</item>
         <item>82</item>
     </integer-array>
 
     <integer-array name="quantity">
-        <item>235</item>
-        <item>98</item>
-        <item>46</item>
-        <item>33</item>
+        <item>137</item>
+        <item>117</item>
+        <item>84</item>
+        <item>21</item>
+        <item>65</item>
+        <item>94</item>
+        <item>86</item>
+        <item>17</item>
+        <item>32</item>
+        <item>97</item>
+        <item>85</item>
+        <item>70</item>
+        <item>103</item>
+        <item>49</item>
+        <item>38</item>
     </integer-array>
 </resources>
