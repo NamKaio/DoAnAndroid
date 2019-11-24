@@ -1,9 +1,12 @@
 package com.example.doanandroid;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -76,6 +79,9 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
         ButterKnife.bind(this);
+        getSupportActionBar().setTitle("Chi tiết sản phẩm");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         id = getIntent().getIntExtra("id", 0);
 
