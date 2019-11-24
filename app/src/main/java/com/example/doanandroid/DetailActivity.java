@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -13,6 +14,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.doanandroid.adapter.CartAdapter;
 import com.example.doanandroid.data.Data;
 import com.example.doanandroid.models.HangHoa;
 import com.example.doanandroid.utils.DownloadImage;
@@ -107,7 +109,11 @@ public class DetailActivity extends AppCompatActivity {
                 case R.id.btDetailAddToCart:
                     Data data = Data.getInstance(DetailActivity.this);
                     HangHoa hh = HangHoa.create(data, id);
-                    gioHangs.add(hh);
+                    if (!gioHangs.contains(hh)) {
+                        gioHangs.add(hh);
+                    } else {
+
+                    }
                     Intent intentAdd = new Intent(getApplicationContext(), CartActivity.class);
                     intentAdd.putParcelableArrayListExtra("id", gioHangs);
                     Toast msg = Toast.makeText(getApplicationContext(), "Sản phẩm đã được thêm vào giỏ!", Toast.LENGTH_SHORT);
