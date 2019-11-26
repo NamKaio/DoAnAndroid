@@ -16,6 +16,27 @@
         <item>12</item>
         <item>13</item>
         <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
     </integer-array>
 
     <string-array name="urls">
@@ -32,8 +53,29 @@
         <item>http://douongcaocap.vn/wp-content/uploads/2016/10/chimay-white-1.jpg</item>
         <item>http://douongcaocap.vn/wp-content/uploads/2016/10/Chimay.png</item>
         <item>http://douongcaocap.vn/wp-content/uploads/2017/09/Bia-Chimay-v%C3%A0ng-48-chai-330ml-300x340-1.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2016/10/Leffe-vang.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2016/10/Leffe-nau-1.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2019/06/Bia-Leffe-Ruby-5-Chai-750ml-Th%C3%B9ng-6-Chai.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2019/08/Bia-Hoegaarden-Grand-Cru-8.5-Chai-330ml-Th%C3%B9ng-24-Chai.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/06/Hoegaarden-Rosee-e1556181262192.jpg</item>
         <item>http://douongcaocap.vn/wp-content/uploads/2016/10/La-Trappe-Quadrupel-330ml-1.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2019/08/Bia-Zundert-Trappist-8-Chai-330ml-Th%C3%B9ng-24-Chai.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2019/06/Bia-Weidmann-Pilsner-5-Chai-330ml-Th%C3%B9ng-24-Chai.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/02/Bia-Jopen-Koyt-Gruit-2.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/02/Bia-Jopen-Northsea-IPA-2.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/02/Bia-Jopen-Hoppen-2.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/02/Bia-Jopen-Adriaan-Wit-2.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/03/bia-Hertog-Jan-Dubbel-500ml.jpg</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/03/bia-Hertog-Jan-Triple-500ml.jpg</item>
         <item>http://douongcaocap.vn/wp-content/uploads/2016/12/Falo-1.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/10/EDDA-San-Marzano-135.jpg</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/12/Vang-Coyam-14.5-Chai-750ml-Th%C3%B9ng-6-Chai.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/10/Vang-SYN-II-complex-145.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/10/Vang-Montes-Alpha-M-145-chai-750ml-th%C3%B9ng-6-chai.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2017/10/Phantom-Bogle-145.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2019/03/R%C6%B0%E1%BB%A3u-Vang-Clos-Rene-Pomerol-13-%E2%80%93-Chai-750ml-1.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2019/03/R%C6%B0%E1%BB%A3u-Vang-Alabaster-14.5-%E2%80%93-Chai-750ml.png</item>
+        <item>http://douongcaocap.vn/wp-content/uploads/2019/03/R%C6%B0%E1%BB%A3u-Vang-Victorino-14.5-%E2%80%93-Chai-750ml.png</item>
     </string-array>
 
     <string-array name="names">
@@ -50,8 +92,29 @@
         <item>Bia Chimay White</item>
         <item>Bia Chimay Red</item>
         <item>Bia Chimay Yellow</item>
-        <item>Bia La Trappe Quadrupel </item>
+        <item>Bia Leffe Yellow</item>
+        <item>Bia Leffe Brown</item>
+        <item>Bia Leffe Ruby</item>
+        <item>Bia Hoegaarden Grand Cru</item>
+        <item>Bia Hoegaarden Rosee</item>
+        <item>Bia La Trappe Quadrupel</item>
+        <item>Bia Zundert Trappist</item>
+        <item>Bia Weidmann Pilsner</item>
+        <item>Bia Jopen Koyt Gruit</item>
+        <item>Bia Jopen Northsea IPA</item>
+        <item>Bia Jopen Hoppen</item>
+        <item>Bia Jopen Adriaan Wit</item>
+        <item>Bia Hertog Jan Dubbel</item>
+        <item>Bia ertog Jan Triple</item>
         <item>Rượu Vang Falo</item>
+        <item>Rượu Vang EDDA</item>
+        <item>Rượu Vang Coyam</item>
+        <item>Rượu Vang SYN Complex</item>
+        <item>Rượu Vang Montes Alpha</item>
+        <item>Rượu Vang Phantom I</item>
+        <item>Rượu Vang Clos Pomerol</item>
+        <item>Rượu Vang Alabaster</item>
+        <item>Rượu Vang Victorino</item>
     </string-array>
 
     <string-array name="countries">
@@ -68,8 +131,29 @@
         <item>Bỉ</item>
         <item>Bỉ</item>
         <item>Bỉ</item>
+        <item>Bỉ</item>
+        <item>Bỉ</item>
+        <item>Bỉ</item>
+        <item>Bỉ</item>
+        <item>Bỉ</item>
+        <item>Hà Lan</item>
+        <item>Hà Lan</item>
+        <item>Hà Lan</item>
+        <item>Hà Lan</item>
+        <item>Hà Lan</item>
+        <item>Hà Lan</item>
+        <item>Hà Lan</item>
+        <item>Hà Lan</item>
         <item>Hà Lan</item>
         <item>Ý</item>
+        <item>Ý</item>
+        <item>Chile</item>
+        <item>Chile</item>
+        <item>Chile</item>
+        <item>Mỹ</item>
+        <item>Pháp</item>
+        <item>Tây Ban Nha</item>
+        <item>Tây Ban Nha</item>
     </string-array>
 
     <string-array name="manufacturers">
@@ -86,8 +170,29 @@
         <item>Brasserie de Chimay</item>
         <item>Brasserie de Chimay</item>
         <item>Brasserie de Chimay</item>
+        <item>InBev Belgium</item>
+        <item>InBev Belgium</item>
+        <item>InBev Belgium</item>
+        <item>Hoegaarden Brewery</item>
+        <item>Hoegaarden Brewery</item>
         <item>Weyerbacher Brewing</item>
+        <item>De Kievit Trappist</item>
+        <item>Weidmann Gemutlich</item>
+        <item>Jopenkerk</item>
+        <item>Jopenkerk</item>
+        <item>Jopenkerk</item>
+        <item>Jopenkerk</item>
+        <item>De Kikvorsch</item>
+        <item>De Kikvorsch</item>
         <item>San Marzano</item>
+        <item>San Marzano</item>
+        <item>Emiliana</item>
+        <item>Curico Valley</item>
+        <item>Montes Winemaking</item>
+        <item>Bogle Winery</item>
+        <item>Clos Rene</item>
+        <item>Alabaster</item>
+        <item>Victorino</item>
     </string-array>
 
     <string-array name="concentrations">
@@ -104,8 +209,29 @@
         <item>8</item>
         <item>7</item>
         <item>4.8</item>
+        <item>6.6</item>
+        <item>6.5</item>
+        <item>5</item>
+        <item>8.5</item>
+        <item>3</item>
         <item>10</item>
+        <item>8.8</item>
+        <item>5</item>
+        <item>8.5</item>
+        <item>6.5</item>
+        <item>6.6</item>
+        <item>5</item>
+        <item>8</item>
+        <item>8</item>
         <item>13.5</item>
+        <item>13.5</item>
+        <item>14.5</item>
+        <item>14.5</item>
+        <item>14.5</item>
+        <item>14.5</item>
+        <item>13</item>
+        <item>14.5</item>
+        <item>14.5</item>
     </string-array>
 
     <string-array name="fulldescs">
@@ -148,10 +274,93 @@
         <item>Chimay Vàng là loại bia đặc biệt với hương vị riêng, khác với các loại Chimay khác.
             Nếu bạn đã từng uống Chimay xanh hay Chimay đỏ thì cần phải thử thêm Chimay Gold – một
             loại bia đặc biệt của Chimay, thì mới có thể thưởng thức đầy đủ các hương vị của Chimay.</item>
+        <item>Với bia nhập khẩu Leffe vàng, bạn sẽ đi từ những vị giác này đến những hương vị khác.
+            Từ vị trái cây ngọt ngào đến cam đắng và cuối cùng là hương vị mạnh mẽ, lôi cuốn với cảm xúc khó quên.</item>
+        <item>Leffe nâu được dùng nhiều trong các bữa tiệc thịnh soạn. Bia ngon hơn khi uống lạnh với
+            những mùi vị hấp dẫn khác nhau.</item>
+        <item>Bia với nồng độ cồn 5%, cùng sắc đỏ sậm nhẹ đặc trưng tạo cảm giác mới lạ và thích thú
+            cho người thưởng thức. Leffe Ruby thơm hương vị của hoa quả ngọt ngào, hòa quyện cùng các
+            làm bia truyền thống Bỉ. Bia mang hương vị ngọt ngào, dịu nhẹ và có chút hậu vị cân bằng
+            khá hoàn hảo. Với lớp bọt mịn màng, bia khá bắt mắt với màu sắc tươi sáng và quyến rũ.</item>
+        <item>Hoegaarden được lên men trong chai và nổi bật với mùi vị chủ đạo là hương đào, cùng
+            hương caramel thơm ngon ngọt dịu. Bia với màu vàng ấm áp, được tô điểm bởi chút lớp bọt
+            trắng phau mịn màng khá thích mắt. Thưởng thức Hoegaarden Grand Cru là bạn đang cảm  nhận
+            cả một kiệt tác, với sự pha trộn giữa vị đắng khá nhẹ hòa chút ngọt dịu dễ uống. Bia thơm
+            ngon, để lại hậu vị khá đậm đà và sâu.</item>
+        <item>Vốn có vị dâu rừng ngào ngạt, cùng dư vị ngọt ngào đọng lại sau khi thưởng thức, Hoegaarden
+            Rosee dần dần chinh phục vị giác của những thực khách khó tính nhất. Đặc biệt hơn nữa,
+            Hoegaarden Rosee với màu hồng đặc trưng và ấn tượng, hiếm có loại bia nào có được.</item>
         <item>Với nồng độ cồn cao, nên bia hơi kén chọn người uống. Chỉ khi bạn biết “uống đúng cách”
             thì mới có thể cảm nhận đầy đủ mùi vị thơm ngon và thú vị mà dòng bia này mang lại.</item>
+        <item>Sở hữu độ cồn cũng khá ấn tượng như chính cái tên của mình – 8%, những chai bia Hà Lan
+            này thực sự làm điên đảo người uống bởi độ thơm ngon của nó. Bia sở hữu một chút mùi thơm
+            mạch nha, một chút mùi thơm đinh hương đi kèm cùng một số gia vị, tựa như một loại rượu
+            vang hấp dẫn. Bia nổi bật với hương trái cây (chà là, nho, mận và táo) hòa cùng chút
+            cay cay của hạt tiêu, quế và đinh hương để tạo nên một mùi vị phức hợp. Bia khá hấp dẫn,
+            lý thú với mùi vị tuyệt vời.</item>
+        <item>Bia với màu vàng đẹp mắt, đậm đà với vị đắng đặc trưng của dòng Pilsner. Hương vị của
+            Weidmann thơm ngon, với nhiều hoa bia cùng lúa mạch khiến vị bia trở nên thú vị hơn. Với
+            độ cồn 5%, bia với hậu vị đắng cùng chút vị tươi mới đủ khiến bạn cảm thấy thoải mái khi uống.</item>
+        <item>Bia Jopen Koyt Gruit được sản xuất bởi những đôi tay khéo léo và tài ba của người dân
+            xứ Hà Lan. Vốn nổi tiếng với truyền thống lâu đời trong việc ủ những vị bia thơm ngon,
+            những người dân nơi đây đã góp thêm vào danh sách dài những loại bia ngon trên thế giới
+            bởi cái tên Jopen.</item>
+        <item>Jopen Northsea IPA thành phần có chứa nhiều hoa bia hơn các loại bia thông thường khác.
+            Là sự hòa quyện một cách khéo léo của nhiều hương vị trái cây khác nhau ( như chanh, trái
+            mơ, đu đủ và quả vải) đã tạo nên một thứ thức uống độc đáo. Bằng sự kết hợp nhuần nhuyễn
+            giữa hoa bia cùng các nguyên liệu trái cây thơm ngon đã tạo nên vị đắng dịu đặc trưng rất
+            đặc biệt của bia.</item>
+        <item>Bạn có biết rằng, bia Jopen Hoppen là loại bia độc nhất vô nhị trên thế giới được sản
+            xuất với công thức sử dụng ngũ cốc 3 giai đoạn và tăng gấp đôi phần hoa bia. Với mục đích
+            mang đến một mùi vị bia hấp dẫn, tinh tế và độc đáo cho người thưởng thức, những người
+            sản xuất đã mạnh dạn áp dụng những công thức mới để đem đến những mùi vị thơm ngon lạ lẫm khác nhau.</item>
+        <item>Bia Jopen Adriaan Wit từng được mệnh danh là loại bia lúa mì hảo hạng, dùng để giải khát
+            trong những ngày hè nóng bức và oi ả. Bia với những thành phần chính chủ yếu được kể đến
+            như: lúa mì, yến mạch, lúa mạch kết hợp cùng các thảo mộc giàu chất dinh dưỡng và cam.
+            Bên cạnh đó, thành phần không thể thiếu trong những chai Jopen Adriaan Wit này chính là
+            hương vị của ngò thơm và thoảng chút hương vanila quyến rũ.</item>
+        <item>Bia Hertog Jan Dubbel có màu nước cốt bia giống như màu của những trái cô la phảng phất
+            chút màu be rất mới lạ, được nhập khẩu từ Hà Lan là một trong những đất nước có truyền
+            thống sản xuất bia lâu đời hứa hẹn mang đến những chai bia sứ đẳng cấp không thể bỏ lỡ.</item>
+        <item>Bia Hertog Jan Triple là một trong những loai bia sứ cao cấp nhập khẩu từ Hà Lan với màu
+            vàng hổ phách của nước cốt bia cùng hương vị đậm mùi trái cây thoảng xông vị nấm men thuần khiết.</item>
         <item>Rượu vang Ý Falo Negroamaro,  là một chai rượu ngon được sản xuất từ giống nho Negroamaro,
             thuộc miền Nam nước Ý xa xôi của hãng rượu danh tiếng San Marzano.</item>
+        <item>Vốn mang hương vị ngọt ngào của hoa đào và vani tinh tế thấm nhuần lên mũi. EDDA còn
+            hào phóng trong sự sang trọng của nó, tươi tinh tế và khoáng sản. Quyện với các hương vị
+            hoa quả tự nhiên và vị rượu nồng nàn như nắng gió Địa Trung Hải. Nên các loại rượu vang
+            đặc biệt là EDDA, cũng y như con người. Ngọt ngào, quyến rũ, lôi quấn, phóng khoáng, đậm
+            mát hơi thở của hương hoa quả vùng nhiệt đới.</item>
+        <item>Coyam có màu đỏ đậm, pha trộn cùng sắc tím violet khá hấp dẫn. Chưa kể đến mùi thơm
+            khá dễ chịu mà nó mang lại. Là hương thơm của những loại hoa quả truyền thống và ấn tượng,
+            kích thích vị giác của người uống. Ngoài ra, nhấm nháp từng ngụm vang bạn sẽ cảm nhận được
+            những mùi vị ấn tượng. Có thể kể đến như bạc hà, tiêu đen, da thuộc, bút chì. Vị vang tươi
+            mát, với kết thúc mạnh đậm và khá ấn tượng.</item>
+        <item>Nếu đủ tinh tế, bạn sẽ cảm nhận được hương vị của gỗ sồi, gỗ tuyết và mùi thuốc lá thoang
+            thoảng. Cũng không thể quên kể đến vị socola đen và vani, mang đến sự thanh lịch và tinh
+            tế cho loại vang này.</item>
+        <item>Vang với hương vị của những quả nho đỏ, đi kèm cùng chút tiêu đen cùng vị cay cay
+            thơm thơm được hoà quyện một cách khéo léo. Thêm một ưu điểm khá nổi bật chính là vị vang
+            khá cân bằng, êm và hoàn hảo. Dư vị để lại khá đậm sâu và khá lâu dài, kích thích người
+            thưởng thức cứ muốn uống mãi không thôi.</item>
+        <item>Vang với vị tinh khiết và khá thơm miệng, loại vang này là sự kết hợp của vị cay cùng
+            nho tạo nên một công thức tuyệt vời. Lớp vỏ sồi hấp dẫn dường như tạo thêm vị ngọt dịu
+            cho vang, làm giảm bớt cái cay nồng khi thưởng thức. Với mùi vị này, người dùng khá dễ
+            uống và khá dễ thưởng thức.</item>
+        <item>Rượu vang với màu đỏ ngọc thạch lựu khá ấn tượng và đẹp mắt. Ngay từ khi mở rượu vang,
+            bạn dường như đã cảm nhận được hương vị thơm ngon ấn tượng của blackcherry, thêm một chút
+            hương giống quả mận. Mùi vị độc đáo của rượu vang dường như chinh phục người uống bởi hậu
+            vị tuyệt vời của nó. Một điểm cộng tuyệt vời nữa, chính là hậu vị mềm mại cùng tannin đậm
+            đà. Tất cả đem đến một sản phẩm vừa thơm ngon vừa lôi cuốn người dùng.</item>
+        <item>Vang khá đẹp mắt với màu anh đào đỏ, đi kèm cùng hương thơm trái cây dịu nhẹ. Tất cả
+            hoà quyện đem đến một xúc cảm tuyệt vời cho người uống. Hương vị của vang khá thanh lịch,
+            được điểm xuyến thêm bởi chút vị gỗ thông cùng vị khoáng. Tất cả tạo nên cảm giác khá hấp
+            dẫn, mới lạ và tinh tế. Ngoài ra, vang có hương hoa nhẹ nhàng với cấu trúc mượt mà. Tất
+            cả đọng lại trong tâm trí người uống một xúc cảm khá tuyệt vời.</item>
+        <item>Khi mở nắp, rượu vang với hương thơm phức hợp và mạnh mẽ. Bạn sẽ cảm nhận chút dư vị
+            thanh nhã của quả mọng đen, bạc hà, cùng khoáng chất gỗ đàn hương và mùi khói của gỗ sồi.
+            Bạn cũng có thể trải nghiệm được hương vị phong phú của trái mọng hoang dã, chút cam thảo,
+            đất rừng và một chút sự kỳ lại của khoáng chất cùng chút vị mặn nhẹ nhàng làm điểm nhấn.</item>
     </string-array>
 
     <string-array name="kind">
@@ -169,6 +378,27 @@
         <item>Bia</item>
         <item>Bia</item>
         <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Bia</item>
+        <item>Rượu</item>
+        <item>Rượu</item>
+        <item>Rượu</item>
+        <item>Rượu</item>
+        <item>Rượu</item>
+        <item>Rượu</item>
+        <item>Rượu</item>
+        <item>Rượu</item>
         <item>Rượu</item>
     </string-array>
 
@@ -188,6 +418,27 @@
         <item>5</item>
         <item>4.5</item>
         <item>3.5</item>
+        <item>4.5</item>
+        <item>5</item>
+        <item>3</item>
+        <item>4.5</item>
+        <item>5</item>
+        <item>4</item>
+        <item>4.5</item>
+        <item>4.5</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4.5</item>
+        <item>4</item>
+        <item>3.5</item>
+        <item>4</item>
+        <item>4.5</item>
+        <item>4.5</item>
+        <item>4.5</item>
+        <item>5</item>
+        <item>4.0</item>
+        <item>4.5</item>
+        <item>5</item>
     </string-array>
 
     <integer-array name="costs">
@@ -204,8 +455,29 @@
         <item>2000000</item>
         <item>2000000</item>
         <item>2000000</item>
+        <item>790000</item>
+        <item>790000</item>
+        <item>790000</item>
+        <item>2640000</item>
+        <item>750000</item>
         <item>2380000</item>
+        <item>3600000</item>
+        <item>1200000</item>
+        <item>1920000</item>
+        <item>1800000</item>
+        <item>1680000</item>
+        <item>1560000</item>
+        <item>1680000</item>
+        <item>1680000</item>
         <item>440000</item>
+        <item>700000</item>
+        <item>1050000</item>
+        <item>1950000</item>
+        <item>2200000</item>
+        <item>1250000</item>
+        <item>1800000</item>
+        <item>5050000</item>
+        <item>1800000</item>
     </integer-array>
 
     <integer-array name="solds">
@@ -222,8 +494,29 @@
         <item>225</item>
         <item>210</item>
         <item>207</item>
+        <item>167</item>
+        <item>56</item>
+        <item>177</item>
+        <item>254</item>
+        <item>53</item>
         <item>101</item>
+        <item>243</item>
+        <item>116</item>
+        <item>145</item>
+        <item>136</item>
+        <item>113</item>
+        <item>109</item>
+        <item>146</item>
+        <item>111</item>
         <item>82</item>
+        <item>72</item>
+        <item>129</item>
+        <item>132</item>
+        <item>141</item>
+        <item>101</item>
+        <item>94</item>
+        <item>157</item>
+        <item>169</item>
     </integer-array>
 
     <integer-array name="quantity">
@@ -240,7 +533,28 @@
         <item>85</item>
         <item>70</item>
         <item>103</item>
+        <item>53</item>
+        <item>74</item>
+        <item>33</item>
+        <item>56</item>
+        <item>47</item>
         <item>49</item>
+        <item>27</item>
+        <item>94</item>
+        <item>45</item>
+        <item>44</item>
+        <item>67</item>
+        <item>31</item>
+        <item>64</item>
+        <item>29</item>
         <item>38</item>
+        <item>28</item>
+        <item>51</item>
+        <item>48</item>
+        <item>39</item>
+        <item>69</item>
+        <item>76</item>
+        <item>43</item>
+        <item>41</item>
     </integer-array>
 </resources>
