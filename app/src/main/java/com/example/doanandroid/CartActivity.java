@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.doanandroid.adapter.CartAdapter;
@@ -41,8 +40,6 @@ public class CartActivity extends AppCompatActivity {
         CartAdapter cartAdapter = new CartAdapter(hangHoas, getApplicationContext());
         gridViewCart.setAdapter(cartAdapter);
 
-        for (int i = 0; i < hangHoas.size(); i ++) {
-        }
         ClickListener listener = new ClickListener();
         btCartHome.setOnClickListener(listener);
         btCartBuy.setOnClickListener(listener);
