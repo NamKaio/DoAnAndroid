@@ -1,23 +1,16 @@
 package com.example.doanandroid;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.GridLayout;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.doanandroid.adapter.CartAdapter;
 import com.example.doanandroid.data.Data;
 import com.example.doanandroid.models.HangHoa;
 import com.example.doanandroid.utils.DownloadImage;
@@ -81,7 +74,6 @@ public class DetailActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         getSupportActionBar().setTitle("Chi tiết sản phẩm");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
         id = getIntent().getIntExtra("id", 0);
 
