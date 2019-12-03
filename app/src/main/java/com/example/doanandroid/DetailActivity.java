@@ -109,8 +109,8 @@ public class DetailActivity extends AppCompatActivity {
                     HangHoa hh = HangHoa.create(data, id);
                     if (!gioHangs.contains(hh)) {
                         gioHangs.add(hh);
-                    } else {
-
+                        btDetailAddToCart.setText("Sản phẩm đã có trong giỏ");
+                        btDetailAddToCart.setEnabled(false);
                     }
                     Intent intentAdd = new Intent(getApplicationContext(), CartActivity.class);
                     intentAdd.putParcelableArrayListExtra("id", gioHangs);

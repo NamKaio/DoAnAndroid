@@ -23,9 +23,6 @@ public class CartActivity extends AppCompatActivity {
     @BindView(R.id.gridViewCart)
     GridView gridViewCart;
 
-    @BindView(R.id.tvCartSummary)
-    TextView tvCartSummary;
-
     @BindView(R.id.btCartHome)
     Button btCartHome;
 
@@ -45,7 +42,6 @@ public class CartActivity extends AppCompatActivity {
         gridViewCart.setAdapter(cartAdapter);
 
         for (int i = 0; i < hangHoas.size(); i ++) {
-            tvCartSummary.setText(hangHoas.get(i).getCost() + "");
         }
         ClickListener listener = new ClickListener();
         btCartHome.setOnClickListener(listener);
